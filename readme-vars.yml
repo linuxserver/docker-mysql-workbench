@@ -1,0 +1,44 @@
+---
+
+# project information
+project_name: mysql-workbench
+project_url: "https://www.mysql.com/products/workbench/"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png"
+project_blurb: "[MySQL Workbench]({{ project_url }}) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "latest"}
+
+# development version
+development_versions: false
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_env: true
+param_env_vars:
+  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings." }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3000", internal_port: "3000", port_desc: "Mysql Workbench desktop gui." }
+
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  The application can be accessed at:
+
+  * http://yourhost:3000/
+
+  By default the user/pass is abc/abc, if you change your password or want to login manually to the GUI session for any reason use the following link:
+
+  * http://yourhost:3000/?login=true
+
+# changelog
+changelogs:
+  - { date: "26.03.20:", desc: "Initial release." }
