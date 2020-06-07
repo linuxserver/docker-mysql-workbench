@@ -11,6 +11,7 @@ RUN \
  echo "**** install packages ****" && \
  apt-get update && \
  apt-get install -y \
+	gnome-keyring \
 	libatkmm-1.6-1v5 \
 	libcairomm-1.0-1v5 \
 	libglibmm-2.4-1v5 \
