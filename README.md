@@ -66,7 +66,7 @@ docker create \
   -e TZ=Europe/London \
   -p 3000:3000 \
   -v /path/to/config:/config \
-  --cap_add="IPC_LOCK" \
+  --cap-add="IPC_LOCK" \
   --restart unless-stopped \
   linuxserver/mysql-workbench
 ```
@@ -107,7 +107,7 @@ Container images are configured using parameters passed at runtime (such as thos
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
 | `-v /config` | Users home directory in the container, stores program settings. |
-| `--cap_add=` | Required for keyring functionality |
+| `--cap-add=` | Required for keyring functionality |
 
 ## Environment variables from files (Docker secrets)
 
