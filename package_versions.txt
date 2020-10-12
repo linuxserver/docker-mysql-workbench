@@ -369,7 +369,7 @@ mysql-workbench-community8.0.21-1ubuntu18.04
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 networkd-dispatcher1.7-0ubuntu3.3
-nodejs12.18.4-1nodesource1
+nodejs12.19.0-1nodesource1
 obconf1:2.0.4+git20150213-2
 openbox3.6.1-7ubuntu0.1
 openssl1.1.1-1ubuntu2.1~18.04.6
