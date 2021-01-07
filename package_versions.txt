@@ -221,7 +221,7 @@ libogg01.3.2-1
 libopus01.1.2-1ubuntu1
 liborc-0.4-01:0.4.28-1
 libossp-uuid161.6.2-1.5build4
-libp11-kit00.23.9-2
+libp11-kit00.23.9-2ubuntu0.1
 libpam0g1.1.8-3.6ubuntu2.18.04.2
 libpam-cap1:2.25-1.2
 libpam-gnome-keyring3.28.0.2-1ubuntu1.18.04.1
@@ -373,8 +373,8 @@ nodejs12.20.0-1nodesource1
 obconf1:2.0.4+git20150213-2
 openbox3.6.1-7ubuntu0.1
 openssl1.1.1-1ubuntu2.1~18.04.7
-p11-kit0.23.9-2
-p11-kit-modules0.23.9-2
+p11-kit0.23.9-2ubuntu0.1
+p11-kit-modules0.23.9-2ubuntu0.1
 passwd1:4.5-1ubuntu2
 perl-base5.26.1-6ubuntu0.5
 pinentry-curses1.1.0-1
