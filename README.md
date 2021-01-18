@@ -226,4 +226,5 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **18.01.21:** - Update libpython dependency.
 * **26.03.20:** - Initial release.
