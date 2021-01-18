@@ -214,7 +214,7 @@ libncursesw56.1-1ubuntu1.18.04
 libnettle63.4-1
 libnghttp2-141.30.0-1ubuntu1
 libnpth01.5-3
-libnss-systemd237-3ubuntu10.43
+libnss-systemd237-3ubuntu10.44
 libobrender32v53.6.1-7ubuntu0.1
 libobt2v53.6.1-7ubuntu0.1
 libogg01.3.2-1
@@ -228,7 +228,7 @@ libpam-gnome-keyring3.28.0.2-1ubuntu1.18.04.1
 libpam-modules1.1.8-3.6ubuntu2.18.04.2
 libpam-modules-bin1.1.8-3.6ubuntu2.18.04.2
 libpam-runtime1.1.8-3.6ubuntu2.18.04.2
-libpam-systemd237-3ubuntu10.43
+libpam-systemd237-3ubuntu10.44
 libpango-1.0-01.40.14-1ubuntu0.1
 libpangocairo-1.0-01.40.14-1ubuntu0.1
 libpangoft2-1.0-01.40.14-1ubuntu0.1
@@ -246,11 +246,13 @@ libpsl50.19.1-5build1
 libpthread-stubs0-dev0.3-4
 libpulse01:11.1-1ubuntu7.11
 libpulsedsp1:11.1-1ubuntu7.11
-libpython2.72.7.17-1~18.04ubuntu1.2
 libpython2.7-minimal2.7.17-1~18.04ubuntu1.2
 libpython2.7-stdlib2.7.17-1~18.04ubuntu1.2
 libpython3.6-minimal3.6.9-1~18.04ubuntu1.3
 libpython3.6-stdlib3.6.9-1~18.04ubuntu1.3
+libpython3.73.7.5-2~18.04
+libpython3.7-minimal3.7.5-2~18.04
+libpython3.7-stdlib3.7.5-2~18.04
 libpython3-stdlib3.6.7-1~18.04
 libpython-stdlib2.7.15~rc1-1
 libreadline77.0-3
@@ -286,7 +288,7 @@ libssh-40.8.0~20170825.94fa1e38-1ubuntu0.7
 libssl1.11.1.1-1ubuntu2.1~18.04.7
 libstartup-notification00.12-5
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.43
+libsystemd0237-3ubuntu10.44
 libtasn1-64.13-2
 libtdb11.3.15-2
 libthai00.1.27-2
@@ -365,7 +367,7 @@ mawk1.3.3-17ubuntu3
 mime-support3.60ubuntu1
 mount2.31.1-0.4ubuntu3.7
 multiarch-support2.27-3ubuntu1.4
-mysql-workbench-community8.0.22-1ubuntu18.04
+mysql-workbench-community8.0.23-1ubuntu18.04
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 networkd-dispatcher1.7-0ubuntu3.3
@@ -403,8 +405,8 @@ shared-mime-info1.9-2
 software-properties-common0.96.24.32.14
 ssl-cert1.0.39
 sudo1.8.21p2-3ubuntu1.3
-systemd237-3ubuntu10.43
-systemd-sysv237-3ubuntu10.43
+systemd237-3ubuntu10.44
+systemd-sysv237-3ubuntu10.44
 sysvinit-utils2.88dsf-59.10ubuntu1
 tar1.29b-2ubuntu0.1
 tzdata2020d-0ubuntu0.18.04
