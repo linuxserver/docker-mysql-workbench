@@ -19,7 +19,7 @@ RUN \
 	libgtkmm-3.0-1v5 \
 	libpangomm-1.4-1v5 \
 	libpcrecpp0v5 \
-	libpython2.7 \
+	libpython3.7 \
 	libsecret-1-0 \
 	libsigc++-2.0-0v5 \
 	libssh-4 \
@@ -27,7 +27,7 @@ RUN \
 	libzip4 && \
  echo "**** install mysql workbench ****" && \
  if [ -z ${WORKBENCH_VERSION+x} ]; then \
-	WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \ 
+	WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \
 	|awk '/<h1>MySQL Workbench/ {print $3;exit}'); \
  fi && \
  curl -Lf -o \

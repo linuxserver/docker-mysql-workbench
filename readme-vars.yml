@@ -42,4 +42,5 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "18.01.21:", desc: "Update libpython dependency." }
   - { date: "26.03.20:", desc: "Initial release." }
