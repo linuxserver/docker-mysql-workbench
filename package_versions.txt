@@ -152,7 +152,7 @@ libgirepository-1.0-11.56.1-1
 libgl11.0.0-2ubuntu2.3
 libgl1-mesa-dri20.0.8-0ubuntu1~18.04.1
 libglapi-mesa20.0.8-0ubuntu1~18.04.1
-libglib2.0-02.56.4-0ubuntu0.18.04.6
+libglib2.0-02.56.4-0ubuntu0.18.04.7
 libglibmm-2.4-1v52.56.0-1
 libglvnd01.0.0-2ubuntu2.3
 libglx01.0.0-2ubuntu2.3
@@ -214,7 +214,7 @@ libncursesw56.1-1ubuntu1.18.04
 libnettle63.4-1
 libnghttp2-141.30.0-1ubuntu1
 libnpth01.5-3
-libnss-systemd237-3ubuntu10.44
+libnss-systemd237-3ubuntu10.45
 libobrender32v53.6.1-7ubuntu0.1
 libobt2v53.6.1-7ubuntu0.1
 libogg01.3.2-1
@@ -228,7 +228,7 @@ libpam-gnome-keyring3.28.0.2-1ubuntu1.18.04.1
 libpam-modules1.1.8-3.6ubuntu2.18.04.2
 libpam-modules-bin1.1.8-3.6ubuntu2.18.04.2
 libpam-runtime1.1.8-3.6ubuntu2.18.04.2
-libpam-systemd237-3ubuntu10.44
+libpam-systemd237-3ubuntu10.45
 libpango-1.0-01.40.14-1ubuntu0.1
 libpangocairo-1.0-01.40.14-1ubuntu0.1
 libpangoft2-1.0-01.40.14-1ubuntu0.1
@@ -288,7 +288,7 @@ libssh-40.8.0~20170825.94fa1e38-1ubuntu0.7
 libssl1.11.1.1-1ubuntu2.1~18.04.8
 libstartup-notification00.12-5
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.44
+libsystemd0237-3ubuntu10.45
 libtasn1-64.13-2
 libtdb11.3.15-2
 libthai00.1.27-2
@@ -357,7 +357,7 @@ libxv12:1.0.11-1
 libxxf86dga12:1.1.4-1
 libxxf86vm11:1.1.4-1
 libzip41.1.2-1.1
-libzstd11.3.3+dfsg-2ubuntu1.1
+libzstd11.3.3+dfsg-2ubuntu1.2
 locales2.27-3ubuntu1.4
 login1:4.5-1ubuntu2
 lsb-base9.20170808ubuntu1
@@ -405,8 +405,8 @@ shared-mime-info1.9-2
 software-properties-common0.96.24.32.14
 ssl-cert1.0.39
 sudo1.8.21p2-3ubuntu1.4
-systemd237-3ubuntu10.44
-systemd-sysv237-3ubuntu10.44
+systemd237-3ubuntu10.45
+systemd-sysv237-3ubuntu10.45
 sysvinit-utils2.88dsf-59.10ubuntu1
 tar1.29b-2ubuntu0.2
 tzdata2021a-0ubuntu0.18.04
