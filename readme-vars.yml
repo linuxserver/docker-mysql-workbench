@@ -42,5 +42,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "20.04.21:", desc: "Rebase on focal." }
   - { date: "18.01.21:", desc: "Update libpython dependency." }
   - { date: "26.03.20:", desc: "Initial release." }

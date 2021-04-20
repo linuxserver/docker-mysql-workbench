@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:bionic
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:focal
 
 # set version label
 ARG BUILD_DATE
@@ -8,38 +8,41 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 RUN \
- echo "**** install packages ****" && \
- apt-get update && \
- apt-get install -y \
-	gnome-keyring \
-	libatkmm-1.6-1v5 \
-	libcairomm-1.0-1v5 \
-	libglibmm-2.4-1v5 \
-	libgtk2.0-0 \
-	libgtkmm-3.0-1v5 \
-	libpangomm-1.4-1v5 \
-	libpcrecpp0v5 \
-	libpython3.7 \
-	libsecret-1-0 \
-	libsigc++-2.0-0v5 \
-	libssh-4 \
-	libvsqlitepp3v5 \
-	libzip4 && \
- echo "**** install mysql workbench ****" && \
- if [ -z ${WORKBENCH_VERSION+x} ]; then \
-	WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \
-	|awk '/<h1>MySQL Workbench/ {print $3;exit}'); \
- fi && \
- curl -Lf -o \
-	/tmp/workbench.deb \
-	https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu18.04_amd64.deb && \
- dpkg -i /tmp/workbench.deb && \
- echo "**** cleanup ****" && \
- apt-get clean && \
- rm -rf \
-	/tmp/* \
-	/var/lib/apt/lists/* \
-	/var/tmp/*
+  echo "**** install packages ****" && \
+  apt-get update && \
+  apt-get install -y \
+    gnome-keyring \
+    libatkmm-1.6-1v5 \
+    libcairomm-1.0-1v5 \
+    libglibmm-2.4-1v5 \
+    libgtk2.0-0 \
+    libgtkmm-3.0-1v5 \
+    libmysqlclient21 \
+    libopengl0 \
+    libpangomm-1.4-1v5 \
+    libpcrecpp0v5 \
+    libproj15 \
+    libpython3.8 \
+    libsecret-1-0 \
+    libsigc++-2.0-0v5 \
+    libssh-4 \
+    libvsqlitepp3v5 \
+    libzip5 && \
+  echo "**** install mysql workbench ****" && \
+  if [ -z ${WORKBENCH_VERSION+x} ]; then \
+    WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \
+    |awk '/<h1>MySQL Workbench/ {print $3;exit}'); \
+  fi && \
+  curl -Lf -o \
+    /tmp/workbench.deb \
+    https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu20.04_amd64.deb && \
+  dpkg -i /tmp/workbench.deb && \
+  echo "**** cleanup ****" && \
+  apt-get clean && \
+  rm -rf \
+    /tmp/* \
+    /var/lib/apt/lists/* \
+    /var/tmp/*
 
 # add local files
 COPY /root /
