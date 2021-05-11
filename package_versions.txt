@@ -376,7 +376,7 @@ libxxf86vm11:1.1.4-1build1
 libyaml-0-20.2.2-1
 libzip51.5.1-0ubuntu1
 libzstd11.4.4+dfsg-3ubuntu0.1
-locales2.31-0ubuntu9.3
+locales2.31-0ubuntu9.2
 login1:4.8.1-1ubuntu5.20.04
 logsave1.45.5-2ubuntu1
 lsb-base11.1.0ubuntu2
@@ -386,7 +386,7 @@ mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.1
 mysql-common5.8+1.0.5ubuntu2
-mysql-workbench-community8.0.24-1ubuntu20.04
+mysql-workbench-community8.0.25-1ubuntu20.04
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 nodejs14.16.1-deb-1nodesource1
