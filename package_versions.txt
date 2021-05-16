@@ -217,7 +217,7 @@ libmount12.34-0.1ubuntu9.1
 libmpc31.1.0-1
 libmpdec22.4.2-3
 libmpfr64.0.2-1
-libmysqlclient218.0.23-0ubuntu0.20.04.1
+libmysqlclient218.0.25-0ubuntu0.20.04.1
 libncurses66.2-0ubuntu2
 libncursesw66.2-0ubuntu2
 libnettle73.5.1+really3.5.1-2ubuntu0.1
