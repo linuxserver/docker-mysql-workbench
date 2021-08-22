@@ -389,10 +389,10 @@ mysql-common5.8+1.0.5ubuntu2
 mysql-workbench-community8.0.26-1ubuntu20.04
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
-nodejs14.17.4-deb-1nodesource1
+nodejs14.17.5-deb-1nodesource1
 obconf1:2.0.4+git20150213-2
 openbox3.6.1-9ubuntu0.20.04.1
-openssh-client1:8.2p1-4ubuntu0.2
+openssh-client1:8.2p1-4ubuntu0.3
 openssl1.1.1f-1ubuntu2.4
 p11-kit0.23.20-1ubuntu0.1
 p11-kit-modules0.23.20-1ubuntu0.1
