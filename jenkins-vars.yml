@@ -3,7 +3,7 @@
 # jenkins variables
 project_name: docker-mysql-workbench
 external_type: na
-custom_version_command: "curl -sL https://dev.mysql.com/downloads/workbench/ |awk '/<h1>MySQL Workbench/ {print $3;exit}'"
+custom_version_command: curl -sL https://archlinux.org/packages/community/x86_64/mysql-workbench/json/ | jq -r '.pkgver'
 release_type: stable
 release_tag: latest
 ls_branch: master
@@ -15,8 +15,8 @@ repo_vars:
   - DOCKERHUB_IMAGE = 'linuxserver/mysql-workbench'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/mysql-workbench'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/mysql-workbench'
-  - DIST_IMAGE = 'ubuntu'
-  - MULTIARCH = 'false'
+  - DIST_IMAGE = 'arch'
+  - MULTIARCH = 'true'
   - CI = 'true'
   - CI_WEB = 'true'
   - CI_PORT = '3000'

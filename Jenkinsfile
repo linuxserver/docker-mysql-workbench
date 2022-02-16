@@ -24,8 +24,8 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/mysql-workbench'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/mysql-workbench'
     PR_DOCKERHUB_IMAGE = 'lspipepr/mysql-workbench'
-    DIST_IMAGE = 'ubuntu'
-    MULTIARCH = 'false'
+    DIST_IMAGE = 'arch'
+    MULTIARCH = 'true'
     CI = 'true'
     CI_WEB = 'true'
     CI_PORT = '3000'
@@ -104,7 +104,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sL https://dev.mysql.com/downloads/workbench/ |awk '/<h1>MySQL Workbench/ {print $3;exit}' ''',
+            script: ''' curl -sL https://archlinux.org/packages/community/x86_64/mysql-workbench/json/ | jq -r '.pkgver' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }
