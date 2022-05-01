@@ -48,13 +48,15 @@ Find us at:
 
 We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
-Simply pulling `lscr.io/linuxserver/mysql-workbench` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+Simply pulling `lscr.io/linuxserver/mysql-workbench:latest` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
 
 The architectures supported by this image are:
 
-| Architecture | Tag |
-| :----: | --- |
-| x86-64 | latest |
+| Architecture | Available | Tag |
+| :----: | :----: | ---- |
+| x86-64 | ✅ | amd64-\<version tag\> |
+| arm64 | ❌ | |
+| armhf| ❌ | |
 
 ## Application Setup
 
@@ -77,7 +79,7 @@ Here are some example snippets to help you get started creating a container.
 version: "2.1"
 services:
   mysql-workbench:
-    image: lscr.io/linuxserver/mysql-workbench
+    image: lscr.io/linuxserver/mysql-workbench:latest
     container_name: mysql-workbench
     environment:
       - PUID=1000
@@ -104,7 +106,7 @@ docker run -d \
   -v /path/to/config:/config \
   --cap-add="IPC_LOCK" \
   --restart unless-stopped \
-  lscr.io/linuxserver/mysql-workbench
+  lscr.io/linuxserver/mysql-workbench:latest
 ```
 
 ## Parameters
@@ -163,7 +165,7 @@ We publish various [Docker Mods](https://github.com/linuxserver/docker-mods) to 
 * container version number
   * `docker inspect -f '{{ index .Config.Labels "build_version" }}' mysql-workbench`
 * image version number
-  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' lscr.io/linuxserver/mysql-workbench`
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' lscr.io/linuxserver/mysql-workbench:latest`
 
 ## Updating Info
 
@@ -181,7 +183,7 @@ Below are the instructions for updating containers:
 
 ### Via Docker Run
 
-* Update the image: `docker pull lscr.io/linuxserver/mysql-workbench`
+* Update the image: `docker pull lscr.io/linuxserver/mysql-workbench:latest`
 * Stop the running container: `docker stop mysql-workbench`
 * Delete the container: `docker rm mysql-workbench`
 * Recreate a new container with the same docker run parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
