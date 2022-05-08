@@ -24,7 +24,7 @@ debconf1.5.73
 debianutils4.9.1
 diffutils1:3.7-3
 dirmngr2.2.19-3ubuntu2.1
-distro-info-data0.43ubuntu1.9
+distro-info-data0.43ubuntu1.10
 docker-ce-cli5:20.10.14~3-0~ubuntu-bionic
 dpkg1.19.7ubuntu3
 e2fsprogs1.45.5-2ubuntu1
@@ -217,7 +217,7 @@ libmount12.34-0.1ubuntu9.3
 libmpc31.1.0-1
 libmpdec22.4.2-3
 libmpfr64.0.2-1
-libmysqlclient218.0.28-0ubuntu0.20.04.3
+libmysqlclient218.0.29-0ubuntu0.20.04.3
 libncurses66.2-0ubuntu2
 libncursesw66.2-0ubuntu2
 libnettle73.5.1+really3.5.1-2ubuntu0.2
