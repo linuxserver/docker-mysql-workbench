@@ -136,7 +136,7 @@ libfontconfig12.13.1-2ubuntu3
 libfontenc11:1.1.4-0ubuntu1
 libfreerdp2-22.2.0+dfsg1-0ubuntu0.20.04.3
 libfreerdp-client2-22.2.0+dfsg1-0ubuntu0.20.04.3
-libfreetype62.10.1-2ubuntu0.1
+libfreetype62.10.1-2ubuntu0.2
 libfribidi01.0.8-2ubuntu0.1
 libfuse22.9.9-3
 libgail182.24.32-4ubuntu4
@@ -177,7 +177,7 @@ libgtk2.0-common2.24.32-4ubuntu4
 libgtk-3-03.24.20-0ubuntu1.1
 libgtk-3-common3.24.20-0ubuntu1.1
 libgtkmm-3.0-1v53.24.2-1build1
-libharfbuzz0b2.6.4-1ubuntu4
+libharfbuzz0b2.6.4-1ubuntu4.2
 libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1
 libheimbase1-heimdal7.7.0+dfsg-1ubuntu1
 libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1
@@ -388,7 +388,7 @@ mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.3
 mysql-common5.8+1.0.5ubuntu2
-mysql-workbench-community8.0.29-1ubuntu20.04
+mysql-workbench-community8.0.28-1ubuntu20.04
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 nodejs14.20.0-deb-1nodesource1
