@@ -388,7 +388,7 @@ mawk1.3.4.20200120-2
 mime-support3.64ubuntu1
 mount2.34-0.1ubuntu9.3
 mysql-common5.8+1.0.5ubuntu2
-mysql-workbench-community8.0.28-1ubuntu20.04
+mysql-workbench-community8.0.29-1ubuntu20.04
 ncurses-base6.2-0ubuntu2
 ncurses-bin6.2-0ubuntu2
 nodejs14.20.0-deb-1nodesource1
