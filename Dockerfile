@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:focal
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:jammy
 
 # set version label
 ARG BUILD_DATE
@@ -21,13 +21,13 @@ RUN \
     libopengl0 \
     libpangomm-1.4-1v5 \
     libpcrecpp0v5 \
-    libproj15 \
-    libpython3.8 \
+    libproj22 \
+    libpython3.10 \
     libsecret-1-0 \
     libsigc++-2.0-0v5 \
     libssh-4 \
     libvsqlitepp3v5 \
-    libzip5 && \
+    libzip4 && \
   echo "**** install mysql workbench ****" && \
   if [ -z ${WORKBENCH_VERSION+x} ]; then \
     WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \
@@ -35,7 +35,7 @@ RUN \
   fi && \
   curl -Lf -o \
     /tmp/workbench.deb \
-    https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu20.04_amd64.deb && \
+    https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu22.04_amd64.deb && \
   dpkg -i /tmp/workbench.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
