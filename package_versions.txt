@@ -210,7 +210,7 @@ libmount12.37.2-4ubuntu3
 libmpc31.2.1-2build1
 libmpdec32.5.1-2build2
 libmpfr64.1.0-3build3
-libmysqlclient218.0.29-0ubuntu0.22.04.2
+libmysqlclient218.0.30-0ubuntu0.22.04.1
 libncurses66.3-2
 libncursesw66.3-2
 libnettle83.7.3-1build2
