@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:jammy-f5e8ed1d-ls35
+FROM ghcr.io/linuxserver/baseimage-rdesktop-web:jammy
 
 # set version label
 ARG BUILD_DATE
@@ -6,6 +6,8 @@ ARG VERSION
 ARG WORKBENCH_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thelamer"
+
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install packages ****" && \
