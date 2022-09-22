@@ -42,6 +42,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "15.09.22:", desc: "Migrate to s6v3." }
   - { date: "26.07.22:", desc: "Rebase on jammy." }
   - { date: "20.04.21:", desc: "Rebase on focal." }
   - { date: "18.01.21:", desc: "Update libpython dependency." }
