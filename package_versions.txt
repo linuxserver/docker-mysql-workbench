@@ -155,9 +155,9 @@ libgirepository-1.0-11.72.0-1
 libgl11.4.0-1
 libgl1-mesa-dri22.0.5-0ubuntu0.1
 libglapi-mesa22.0.5-0ubuntu0.1
-libglib2.0-02.72.1-1
-libglib2.0-bin2.72.1-1
-libglib2.0-data2.72.1-1
+libglib2.0-02.72.4-0ubuntu1
+libglib2.0-bin2.72.4-0ubuntu1
+libglib2.0-data2.72.4-0ubuntu1
 libglibmm-2.4-1v52.66.2-2
 libglvnd01.4.0-1
 libglx01.4.0-1
@@ -259,9 +259,9 @@ libpulsedsp1:15.99.1+dfsg1-1ubuntu2
 libpython2.7-minimal2.7.18-13ubuntu1.1
 libpython2.7-stdlib2.7.18-13ubuntu1.1
 libpython2-stdlib2.7.18-3
-libpython3.103.10.6-1~22.04.1
-libpython3.10-minimal3.10.6-1~22.04.1
-libpython3.10-stdlib3.10.6-1~22.04.1
+libpython3.103.10.6-1~22.04.2
+libpython3.10-minimal3.10.6-1~22.04.2
+libpython3.10-stdlib3.10.6-1~22.04.2
 libpython3-stdlib3.10.6-1~22.04
 libreadline88.1.2-1
 librsvg2-22.52.5+dfsg-3
@@ -302,7 +302,7 @@ libtasn1-64.18.0-4build1
 libtdb11.4.5-2build1
 libthai00.1.29-1build1
 libthai-data0.1.29-1build1
-libtiff54.3.0-6ubuntu0.2
+libtiff54.3.0-6ubuntu0.3
 libtinfo66.3-2
 libtirpc31.3.2-2ubuntu0.1
 libtirpc-common1.3.2-2ubuntu0.1
@@ -416,8 +416,8 @@ python22.7.18-3
 python2.72.7.18-13ubuntu1.1
 python2.7-minimal2.7.18-13ubuntu1.1
 python2-minimal2.7.18-3
-python3.103.10.6-1~22.04.1
-python3.10-minimal3.10.6-1~22.04.1
+python3.103.10.6-1~22.04.2
+python3.10-minimal3.10.6-1~22.04.2
 python33.10.6-1~22.04
 python3-apt2.3.0ubuntu2.1
 python3-blinker1.4+dfsg1-0.4
