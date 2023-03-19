@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-rdesktop-web:jammy
+FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntujammy
 
 # set version label
 ARG BUILD_DATE
@@ -8,6 +8,9 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 ARG DEBIAN_FRONTEND="noninteractive"
+
+# title
+ENV TITLE=MySQL-Workbench
 
 RUN \
   echo "**** install packages ****" && \
