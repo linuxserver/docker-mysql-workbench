@@ -70,6 +70,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "20.04.23:", desc: "Update app to launch fullscreen." }
   - { date: "18.03.23:", desc: "Rebase to KasmVNC base image." }
   - { date: "15.09.22:", desc: "Migrate to s6v3." }
   - { date: "26.07.22:", desc: "Rebase on jammy." }

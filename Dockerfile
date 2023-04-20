@@ -42,6 +42,8 @@ RUN \
     /tmp/workbench.deb \
     https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu22.04_amd64.deb && \
   dpkg -i /tmp/workbench.deb && \
+  echo "**** openbox tweaks ****" && \
+  sed -i 's|</applications>|  <application title="MySQL Workbench" type="normal">\n    <maximized>yes</maximized>\n  </application>\n</applications>|' /etc/xdg/openbox/rc.xml && \
   echo "**** cleanup ****" && \
   apt-get clean && \
   rm -rf \
