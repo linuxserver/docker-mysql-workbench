@@ -714,7 +714,7 @@ libmpfr6                                                                      4.
 libmpg123-0                                                                   1.29.3-1build1                                      deb        
 libmro-compat-perl                                                            0.15-1                                              deb        
 libmysofa1                                                                    1.2.1~dfsg0-1                                       deb        
-libmysqlclient21                                                              8.0.33-0ubuntu0.22.04.4                             deb        
+libmysqlclient21                                                              8.0.34-0ubuntu0.22.04.1                             deb        
 libnamespace-autoclean-perl                                                   0.29-1                                              deb        
 libnamespace-clean-perl                                                       0.27-1                                              deb        
 libncurses6                                                                   6.3-2ubuntu0.1                                      deb        
@@ -1010,7 +1010,6 @@ netcat-openbsd                                                                1.
 nginx                                                                         1.18.0-6ubuntu14.4                                  deb        
 nginx-common                                                                  1.18.0-6ubuntu14.4                                  deb        
 nginx-core                                                                    1.18.0-6ubuntu14.4                                  deb        
-node                                                                          18.17.1                                             binary     
 node-gyp                                                                      9.3.1                                               npm        
 nodejs                                                                        18.17.1-deb-1nodesource1                            deb        
 nopt                                                                          6.0.0                                               npm        
@@ -1076,7 +1075,6 @@ pulseaudio                                                                    1:
 pulseaudio-utils                                                              1:15.99.1+dfsg1-1ubuntu2.1                          deb        
 pulseaudio2                                                                   0.5.5                                               npm        
 pyparsing                                                                     2.4.7                                               python     
-python                                                                        3.10.12                                             binary     
 python-apt                                                                    2.4.0+ubuntu2                                       python     
 python-apt-common                                                             2.4.0ubuntu2                                        deb        
 python3                                                                       3.10.6-1~22.04                                      deb        
