@@ -32,13 +32,11 @@ RUN \
     libpangomm-1.4-1v5 \
     libpcrecpp0v5 \
     libproj25 \
-    libpython3.12 \
     libpython3.12t64 \
     libsecret-1-0 \
     libsigc++-2.0-0v5 \
     libssh-4 \
     libvsqlitepp3v5 \
-    libzip4 \
     libzip4t64 && \
   echo "**** install mysql workbench ****" && \
   if [ -z ${WORKBENCH_VERSION+x} ]; then \
