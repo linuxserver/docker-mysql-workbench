@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntujammy
+FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
 
 # set version label
 ARG BUILD_DATE
@@ -27,16 +27,19 @@ RUN \
     libgtk2.0-0 \
     libgtkmm-3.0-1v5 \
     libmysqlclient21 \
+    libodbc2 \
     libopengl0 \
     libpangomm-1.4-1v5 \
     libpcrecpp0v5 \
-    libproj22 \
-    libpython3.10 \
+    libproj25 \
+    libpython3.12 \
+    libpython3.12t64 \
     libsecret-1-0 \
     libsigc++-2.0-0v5 \
     libssh-4 \
     libvsqlitepp3v5 \
-    libzip4 && \
+    libzip4 \
+    libzip4t64 && \
   echo "**** install mysql workbench ****" && \
   if [ -z ${WORKBENCH_VERSION+x} ]; then \
     WORKBENCH_VERSION=$(curl -sL https://dev.mysql.com/downloads/workbench/ \
