@@ -83,7 +83,7 @@ This container is based on [Docker Baseimage KasmVNC](https://github.com/linuxse
 | DRINODE | If mounting in /dev/dri for [DRI3 GPU Acceleration](https://www.kasmweb.com/kasmvnc/docs/master/gpu_acceleration.html) allows you to specify the device to use IE `/dev/dri/renderD128` |
 | LC_ALL | Set the Language for the container to run as IE `fr_FR.UTF-8` `ar_AE.UTF-8` |
 | NO_DECOR | If set the application will run without window borders for use as a PWA. |
-| NO_FULL | Do not autmatically fullscreen applications when using openbox. |
+| NO_FULL | Do not automatically fullscreen applications when using openbox. |
 
 #### Optional run configurations
 
@@ -91,7 +91,7 @@ This container is based on [Docker Baseimage KasmVNC](https://github.com/linuxse
 | :----: | --- |
 | `--privileged` | Will start a Docker in Docker (DinD) setup inside the container to use docker in an isolated environment. For increased performance mount the Docker directory inside the container to the host IE `-v /home/user/docker-data:/var/lib/docker`. |
 | `-v /var/run/docker.sock:/var/run/docker.sock` | Mount in the host level Docker socket to either interact with it via CLI or use Docker enabled applications. |
-| `--device /dev/dri:/dev/dri` | Mount a GPU into the container, this can be used in conjunction with the `DRINODE` environment variable to leverage a host video card for GPU accelerated appplications. Only **Open Source** drivers are supported IE (Intel,AMDGPU,Radeon,ATI,Nouveau) |
+| `--device /dev/dri:/dev/dri` | Mount a GPU into the container, this can be used in conjunction with the `DRINODE` environment variable to leverage a host video card for GPU accelerated applications. Only **Open Source** drivers are supported IE (Intel,AMDGPU,Radeon,ATI,Nouveau) |
 
 ### Language Support - Internationalization
 
@@ -328,6 +328,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **01.07.24:** - Rebase to Noble.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
 * **20.04.23:** - Update app to launch fullscreen.
 * **18.03.23:** - Rebase to KasmVNC base image.

@@ -6,21 +6,14 @@ project_url: "https://www.mysql.com/products/workbench/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png"
 project_blurb: "[MySQL Workbench]({{ project_url }}) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-project_blurb_optional_extras_enabled: false
 
 # supported architectures
 available_architectures:
   - { arch: "{{ arch_x86_64 }}", tag: "latest"}
 
-# development version
-development_versions: false
-
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_env: true
-param_env_vars:
-  - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
   - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings." }
@@ -57,7 +50,7 @@ app_setup_block: |
   | DRINODE | If mounting in /dev/dri for [DRI3 GPU Acceleration](https://www.kasmweb.com/kasmvnc/docs/master/gpu_acceleration.html) allows you to specify the device to use IE `/dev/dri/renderD128` |
   | LC_ALL | Set the Language for the container to run as IE `fr_FR.UTF-8` `ar_AE.UTF-8` |
   | NO_DECOR | If set the application will run without window borders for use as a PWA. |
-  | NO_FULL | Do not autmatically fullscreen applications when using openbox. |
+  | NO_FULL | Do not automatically fullscreen applications when using openbox. |
 
   #### Optional run configurations
 
@@ -65,7 +58,7 @@ app_setup_block: |
   | :----: | --- |
   | `--privileged` | Will start a Docker in Docker (DinD) setup inside the container to use docker in an isolated environment. For increased performance mount the Docker directory inside the container to the host IE `-v /home/user/docker-data:/var/lib/docker`. |
   | `-v /var/run/docker.sock:/var/run/docker.sock` | Mount in the host level Docker socket to either interact with it via CLI or use Docker enabled applications. |
-  | `--device /dev/dri:/dev/dri` | Mount a GPU into the container, this can be used in conjunction with the `DRINODE` environment variable to leverage a host video card for GPU accelerated appplications. Only **Open Source** drivers are supported IE (Intel,AMDGPU,Radeon,ATI,Nouveau) |
+  | `--device /dev/dri:/dev/dri` | Mount a GPU into the container, this can be used in conjunction with the `DRINODE` environment variable to leverage a host video card for GPU accelerated applications. Only **Open Source** drivers are supported IE (Intel,AMDGPU,Radeon,ATI,Nouveau) |
 
   ### Language Support - Internationalization
 
@@ -87,6 +80,7 @@ app_setup_block: |
 
 # changelog
 changelogs:
+  - { date: "01.07.24:", desc: "Rebase to Noble." }
   - { date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon." }
   - { date: "20.04.23:", desc: "Update app to launch fullscreen." }
   - { date: "18.03.23:", desc: "Rebase to KasmVNC base image." }
