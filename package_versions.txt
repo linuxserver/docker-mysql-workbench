@@ -512,7 +512,7 @@ grep                                                                          3.
 groff-base                                                                    1.23.0-3build2                          deb                         
 gsettings-desktop-schemas                                                     46.1-0ubuntu1                           deb                         
 gstreamer1.0-gl                                                               1.24.2-1ubuntu0.1                       deb                         
-gtk-update-icon-cache                                                         3.24.41-4ubuntu1.1                      deb                         
+gtk-update-icon-cache                                                         3.24.41-4ubuntu1.2                      deb                         
 gzip                                                                          1.12-1ubuntu3                           deb                         
 has-flag                                                                      4.0.0                                   npm                         
 has-property-descriptors                                                      1.0.2                                   npm                         
@@ -721,9 +721,9 @@ libgssapi-krb5-2                                                              1.
 libgstreamer-gl1.0-0                                                          1.24.2-1ubuntu0.1                       deb                         
 libgstreamer-plugins-base1.0-0                                                1.24.2-1ubuntu0.1                       deb                         
 libgstreamer1.0-0                                                             1.24.2-1                                deb                         
-libgtk-3-0t64                                                                 3.24.41-4ubuntu1.1                      deb                         
-libgtk-3-bin                                                                  3.24.41-4ubuntu1.1                      deb                         
-libgtk-3-common                                                               3.24.41-4ubuntu1.1                      deb                         
+libgtk-3-0t64                                                                 3.24.41-4ubuntu1.2                      deb                         
+libgtk-3-bin                                                                  3.24.41-4ubuntu1.2                      deb                         
+libgtk-3-common                                                               3.24.41-4ubuntu1.2                      deb                         
 libgtk-4-1                                                                    4.14.2+ds-1ubuntu1                      deb                         
 libgtk-4-bin                                                                  4.14.2+ds-1ubuntu1                      deb                         
 libgtk-4-common                                                               4.14.2+ds-1ubuntu1                      deb                         
