@@ -45,7 +45,7 @@ RUN \
   fi && \
   curl -Lf -o \
     /tmp/workbench.deb \
-    https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu24.04_amd64.deb && \
+    https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community_${WORKBENCH_VERSION}-1ubuntu24.04_amd64.deb && \
   dpkg -i /tmp/workbench.deb && \
   echo "**** cleanup ****" && \
   apt-get clean && \
