@@ -189,10 +189,12 @@ It is possible to install extra packages during container start using [universal
     - INSTALL_PACKAGES=libfuse2|git|gdb
 ```
 
- 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
+
+>[!NOTE]
+>Unless a parameter is flaged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
@@ -202,6 +204,8 @@ services:
   mysql-workbench:
     image: lscr.io/linuxserver/mysql-workbench:latest
     container_name: mysql-workbench
+    cap_add:
+      - IPC_LOCK
     environment:
       - PUID=1000
       - PGID=1000
@@ -211,8 +215,6 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
-    cap_add:
-      - IPC_LOCK
     restart: unless-stopped
 ```
 
@@ -221,13 +223,13 @@ services:
 ```bash
 docker run -d \
   --name=mysql-workbench \
+  --cap-add=IPC_LOCK \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   -p 3000:3000 \
   -p 3001:3001 \
   -v /path/to/config:/config \
-  --cap-add="IPC_LOCK" \
   --restart unless-stopped \
   lscr.io/linuxserver/mysql-workbench:latest
 ```
@@ -238,13 +240,17 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 3000` | Mysql Workbench desktop gui. |
-| `-p 3001` | Mysql Workbench desktop gui HTTPS. |
+| `-p 3000:3000` | Mysql Workbench desktop gui. |
+| `-p 3001:3001` | Mysql Workbench desktop gui HTTPS. |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Users home directory in the container, stores program settings. |
-| `--cap-add=` | Required for keyring functionality |
+| `--cap-add=IPC_LOCK` | Required for keyring functionality. |
+
+### Portainer notice
+
+This image utilises `cap_add` or `sysctl` to work properly. This is not implemented properly in some versions of Portainer, thus this image may not work if deployed through Portainer.
 
 ## Environment variables from files (Docker secrets)
 
