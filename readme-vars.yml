@@ -6,24 +6,22 @@ project_url: "https://www.mysql.com/products/workbench/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-icon.png"
 project_blurb: "[MySQL Workbench]({{ project_url }}) is a unified visual tool for database architects, developers, and DBAs. MySQL Workbench provides data modeling, SQL development, and comprehensive administration tools for server configuration, user administration, backup, and much more."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "latest"}
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings." }
+  - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores program settings."}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "3000", internal_port: "3000", port_desc: "Mysql Workbench desktop gui." }
-  - { external_port: "3001", internal_port: "3001", port_desc: "Mysql Workbench desktop gui HTTPS." }
+  - {external_port: "3000", internal_port: "3000", port_desc: "Mysql Workbench desktop gui."}
+  - {external_port: "3001", internal_port: "3001", port_desc: "Mysql Workbench desktop gui HTTPS."}
 cap_add_param: true
 cap_add_param_vars:
-  - { cap_add_var: "IPC_LOCK", desc: "Required for keyring functionality." }
+  - {cap_add_var: "IPC_LOCK", desc: "Required for keyring functionality."}
 # Kasm blurb settings
 kasm_blurb: true
 show_nvidia: true
@@ -37,15 +35,76 @@ app_setup_block: |
 
   * http://yourhost:3000/
   * https://yourhost:3001/
-
+# init diagram
+init_diagram: |
+  "mysql-workbench:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-kasmvnc-end -> init-config
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    init-os-end -> init-kasmvnc
+    init-nginx -> init-kasmvnc-config
+    init-video -> init-kasmvnc-end
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    init-kasmvnc -> init-nginx
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-kasmvnc-config -> init-video
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-de
+    svc-nginx -> svc-de
+    svc-de -> legacy-services
+    init-services -> svc-docker
+    svc-de -> svc-docker
+    svc-docker -> legacy-services
+    init-services -> svc-kasmvnc
+    svc-pulseaudio -> svc-kasmvnc
+    svc-kasmvnc -> legacy-services
+    init-services -> svc-kclient
+    svc-kasmvnc -> svc-kclient
+    svc-kclient -> legacy-services
+    init-services -> svc-nginx
+    svc-kclient -> svc-nginx
+    svc-nginx -> legacy-services
+    init-services -> svc-pulseaudio
+    svc-pulseaudio -> legacy-services
+  }
+  Base Images: {
+    "baseimage-kasmvnc:ubuntunoble" <- "baseimage-ubuntu:noble"
+  }
+  "mysql-workbench:latest" <- Base Images
 # changelog
 changelogs:
-  - { date: "01.07.24:", desc: "Rebase to Noble." }
-  - { date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon." }
-  - { date: "20.04.23:", desc: "Update app to launch fullscreen." }
-  - { date: "18.03.23:", desc: "Rebase to KasmVNC base image." }
-  - { date: "15.09.22:", desc: "Migrate to s6v3." }
-  - { date: "26.07.22:", desc: "Rebase on jammy." }
-  - { date: "20.04.21:", desc: "Rebase on focal." }
-  - { date: "18.01.21:", desc: "Update libpython dependency." }
-  - { date: "26.03.20:", desc: "Initial release." }
+  - {date: "01.07.24:", desc: "Rebase to Noble."}
+  - {date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon."}
+  - {date: "20.04.23:", desc: "Update app to launch fullscreen."}
+  - {date: "18.03.23:", desc: "Rebase to KasmVNC base image."}
+  - {date: "15.09.22:", desc: "Migrate to s6v3."}
+  - {date: "26.07.22:", desc: "Rebase on jammy."}
+  - {date: "20.04.21:", desc: "Rebase on focal."}
+  - {date: "18.01.21:", desc: "Update libpython dependency."}
+  - {date: "26.03.20:", desc: "Initial release."}
