@@ -7,7 +7,7 @@ NAME                                                                          VE
 @types/busboy                                                                 1.5.0                                   npm                         
 @types/cors                                                                   2.8.17                                  npm                         
 @types/node                                                                   18.18.14                                npm                         
-@types/node                                                                   22.13.1                                 npm                         
+@types/node                                                                   22.13.4                                 npm                         
 accepts                                                                       1.3.8                                   npm                         
 acorn                                                                         8.8.1                                   npm                         
 acorn-bigint                                                                  1.0.0                                   npm                         
@@ -35,7 +35,7 @@ async                                                                         3.
 at-spi2-common                                                                2.52.0-1build1                          deb                         
 at-spi2-core                                                                  2.52.0-1build1                          deb                         
 balanced-match                                                                1.0.2                                   npm                         
-base-files                                                                    13ubuntu10.1                            deb                         
+base-files                                                                    13ubuntu10.2                            deb                         
 base-passwd                                                                   3.6.3build1                             deb                         
 base64id                                                                      2.0.0                                   npm                         
 bash                                                                          5.2.21-2ubuntu4                         deb                         
@@ -51,7 +51,7 @@ bsdutils                                                                      1:
 busboy                                                                        1.6.0                                   npm                         
 bytes                                                                         3.1.2                                   npm                         
 ca-certificates                                                               20240203                                deb                         
-call-bind-apply-helpers                                                       1.0.1                                   npm                         
+call-bind-apply-helpers                                                       1.0.2                                   npm                         
 call-bound                                                                    1.0.3                                   npm                         
 catatonit                                                                     0.1.7-1                                 deb                         
 chalk                                                                         4.1.2                                   npm                         
@@ -570,7 +570,7 @@ kbd                                                                           2.
 kclient                                                                       0.4.1                                   npm                         
 keyboard-configuration                                                        1.226ubuntu1                            deb                         
 keyboxd                                                                       2.4.4-2ubuntu17                         deb                         
-krb5-locales                                                                  1.20.1-6ubuntu2.2                       deb                         
+krb5-locales                                                                  1.20.1-6ubuntu2.3                       deb                         
 launchpadlib                                                                  1.11.0                                  python                      
 lazr-restfulclient                                                            0.14.6                                  python                      
 lazr-uri                                                                      1.0.6                                   python                      
@@ -734,7 +734,7 @@ libgs-common                                                                  10
 libgs10                                                                       10.02.1~dfsg1-0ubuntu7.4                deb                         
 libgs10-common                                                                10.02.1~dfsg1-0ubuntu7.4                deb                         
 libgsm1                                                                       1.0.22-1build1                          deb                         
-libgssapi-krb5-2                                                              1.20.1-6ubuntu2.2                       deb                         
+libgssapi-krb5-2                                                              1.20.1-6ubuntu2.3                       deb                         
 libgstreamer-gl1.0-0                                                          1.24.2-1ubuntu0.2                       deb                         
 libgstreamer-plugins-base1.0-0                                                1.24.2-1ubuntu0.2                       deb                         
 libgstreamer1.0-0                                                             1.24.2-1ubuntu0.1                       deb                         
@@ -779,11 +779,11 @@ libjson-c5                                                                    0.
 libjson-glib-1.0-0                                                            1.8.0-2build2                           deb                         
 libjson-glib-1.0-common                                                       1.8.0-2build2                           deb                         
 libjxl0.7                                                                     0.7.0-10.2ubuntu6                       deb                         
-libk5crypto3                                                                  1.20.1-6ubuntu2.2                       deb                         
+libk5crypto3                                                                  1.20.1-6ubuntu2.3                       deb                         
 libkeyutils1                                                                  1.6.3-3build1                           deb                         
 libkmod2                                                                      31+20240202-2ubuntu7.1                  deb                         
-libkrb5-3                                                                     1.20.1-6ubuntu2.2                       deb                         
-libkrb5support0                                                               1.20.1-6ubuntu2.2                       deb                         
+libkrb5-3                                                                     1.20.1-6ubuntu2.3                       deb                         
+libkrb5support0                                                               1.20.1-6ubuntu2.3                       deb                         
 libksba8                                                                      1.6.6-1build1                           deb                         
 liblapack3                                                                    3.12.0-3build1.1                        deb                         
 liblcms2-2                                                                    2.14-2build1                            deb                         
@@ -886,9 +886,9 @@ libproxy1v5                                                                   0.
 libpsl5t64                                                                    0.21.2-1.1build1                        deb                         
 libpulse0                                                                     1:16.1+dfsg1-2ubuntu10.1                deb                         
 libpython3-stdlib                                                             3.12.3-0ubuntu2                         deb                         
-libpython3.12-minimal                                                         3.12.3-1ubuntu0.4                       deb                         
-libpython3.12-stdlib                                                          3.12.3-1ubuntu0.4                       deb                         
-libpython3.12t64                                                              3.12.3-1ubuntu0.4                       deb                         
+libpython3.12-minimal                                                         3.12.3-1ubuntu0.5                       deb                         
+libpython3.12-stdlib                                                          3.12.3-1ubuntu0.5                       deb                         
+libpython3.12t64                                                              3.12.3-1ubuntu0.5                       deb                         
 libqpdf29t64                                                                  11.9.0-1.1build1                        deb                         
 librabbitmq4                                                                  0.11.0-1build2                          deb                         
 librav1e0                                                                     0.7.1-2                                 deb                         
@@ -1158,8 +1158,8 @@ python3-pyparsing                                                             3.
 python3-six                                                                   1.16.0-4                                deb                         
 python3-software-properties                                                   0.99.49.1                               deb                         
 python3-wadllib                                                               1.3.6-5                                 deb                         
-python3.12                                                                    3.12.3-1ubuntu0.4                       deb                         
-python3.12-minimal                                                            3.12.3-1ubuntu0.4                       deb                         
+python3.12                                                                    3.12.3-1ubuntu0.5                       deb                         
+python3.12-minimal                                                            3.12.3-1ubuntu0.5                       deb                         
 qs                                                                            6.13.0                                  npm                         
 range-parser                                                                  1.2.1                                   npm                         
 raw-body                                                                      2.5.2                                   npm                         
@@ -1208,7 +1208,7 @@ tags.cncf.io/container-device-interface/specs-go                              v0
 tar                                                                           1.35+dfsg-3build1                       deb                         
 toidentifier                                                                  1.0.1                                   npm                         
 type-is                                                                       1.6.18                                  npm                         
-tzdata                                                                        2024b-0ubuntu0.24.04                    deb                         
+tzdata                                                                        2024b-0ubuntu0.24.04.1                  deb                         
 ubuntu-keyring                                                                2023.11.28.1                            deb                         
 ubuntu-mono                                                                   24.04-0ubuntu1                          deb                         
 ucf                                                                           3.0043+nmu1                             deb                         
