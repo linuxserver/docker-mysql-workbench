@@ -7,7 +7,7 @@ NAME                                                                          VE
 @types/busboy                                                                 1.5.0                                   npm                         
 @types/cors                                                                   2.8.19                                  npm                         
 @types/node                                                                   18.18.14                                npm                         
-@types/node                                                                   22.15.30                                npm                         
+@types/node                                                                   24.0.1                                  npm                         
 accepts                                                                       1.3.8                                   npm                         
 acorn                                                                         8.8.1                                   npm                         
 acorn-bigint                                                                  1.0.0                                   npm                         
@@ -44,8 +44,8 @@ binary-search                                                                 1.
 bindings                                                                      1.5.0                                   npm                         
 blinker                                                                       1.7.0                                   python                      
 body-parser                                                                   1.20.3                                  npm                         
-brace-expansion                                                               1.1.11                                  npm                         
-brace-expansion                                                               2.0.1                                   npm                         
+brace-expansion                                                               1.1.12                                  npm                         
+brace-expansion                                                               2.0.2                                   npm                         
 bsdextrautils                                                                 2.39.3-9ubuntu6.2                       deb                         
 bsdutils                                                                      1:2.39.3-9ubuntu6.2                     deb                         
 busboy                                                                        1.6.0                                   npm                         
@@ -886,7 +886,7 @@ libpam-gnome-keyring                                                          46
 libpam-modules                                                                1.5.3-5ubuntu5.1                        deb                         
 libpam-modules-bin                                                            1.5.3-5ubuntu5.1                        deb                         
 libpam-runtime                                                                1.5.3-5ubuntu5.1                        deb                         
-libpam-systemd                                                                255.4-1ubuntu8.6                        deb                         
+libpam-systemd                                                                255.4-1ubuntu8.8                        deb                         
 libpam0g                                                                      1.5.3-5ubuntu5.1                        deb                         
 libpango-1.0-0                                                                1.52.1+ds-1build1                       deb                         
 libpangocairo-1.0-0                                                           1.52.1+ds-1build1                       deb                         
@@ -923,9 +923,9 @@ libproxy1v5                                                                   0.
 libpsl5t64                                                                    0.21.2-1.1build1                        deb                         
 libpulse0                                                                     1:16.1+dfsg1-2ubuntu10.1                deb                         
 libpython3-stdlib                                                             3.12.3-0ubuntu2                         deb                         
-libpython3.12-minimal                                                         3.12.3-1ubuntu0.5                       deb                         
-libpython3.12-stdlib                                                          3.12.3-1ubuntu0.5                       deb                         
-libpython3.12t64                                                              3.12.3-1ubuntu0.5                       deb                         
+libpython3.12-minimal                                                         3.12.3-1ubuntu0.7                       deb                         
+libpython3.12-stdlib                                                          3.12.3-1ubuntu0.7                       deb                         
+libpython3.12t64                                                              3.12.3-1ubuntu0.7                       deb                         
 libqpdf29t64                                                                  11.9.0-1.1build1                        deb                         
 librabbitmq4                                                                  0.11.0-1build2                          deb                         
 librav1e0                                                                     0.7.1-2                                 deb                         
@@ -993,8 +993,8 @@ libsvtav1enc1d1                                                               1.
 libswitch-perl                                                                2.17-3                                  deb                         
 libswresample4                                                                7:6.1.1-3ubuntu5                        deb                         
 libswscale7                                                                   7:6.1.1-3ubuntu5                        deb                         
-libsystemd-shared                                                             255.4-1ubuntu8.6                        deb                         
-libsystemd0                                                                   255.4-1ubuntu8.6                        deb                         
+libsystemd-shared                                                             255.4-1ubuntu8.8                        deb                         
+libsystemd0                                                                   255.4-1ubuntu8.8                        deb                         
 libtasn1-6                                                                    4.19.0-3ubuntu0.24.04.1                 deb                         
 libtdb1                                                                       1.4.10-1build1                          deb                         
 libthai-data                                                                  0.1.29-2build1                          deb                         
@@ -1007,7 +1007,7 @@ libtirpc3t64                                                                  1.
 libtry-tiny-perl                                                              0.31-2                                  deb                         
 libtwolame0                                                                   0.4.0-2build3                           deb                         
 libuchardet0                                                                  0.0.8-1build1                           deb                         
-libudev1                                                                      255.4-1ubuntu8.6                        deb                         
+libudev1                                                                      255.4-1ubuntu8.8                        deb                         
 libudfread0                                                                   1.1.2-1build1                           deb                         
 libunibreak5                                                                  5.1-2build1                             deb                         
 libunistring5                                                                 1.1-2build1.1                           deb                         
@@ -1195,8 +1195,8 @@ python3-pyparsing                                                             3.
 python3-six                                                                   1.16.0-4                                deb                         
 python3-software-properties                                                   0.99.49.2                               deb                         
 python3-wadllib                                                               1.3.6-5                                 deb                         
-python3.12                                                                    3.12.3-1ubuntu0.5                       deb                         
-python3.12-minimal                                                            3.12.3-1ubuntu0.5                       deb                         
+python3.12                                                                    3.12.3-1ubuntu0.7                       deb                         
+python3.12-minimal                                                            3.12.3-1ubuntu0.7                       deb                         
 qs                                                                            6.13.0                                  npm                         
 range-parser                                                                  1.2.1                                   npm                         
 raw-body                                                                      2.5.2                                   npm                         
@@ -1234,9 +1234,9 @@ stdlib                                                                        go
 streamsearch                                                                  1.1.0                                   npm                         
 sudo                                                                          1.9.15p5-3ubuntu5                       deb                         
 supports-color                                                                7.2.0                                   npm                         
-systemd                                                                       255.4-1ubuntu8.6                        deb                         
-systemd-dev                                                                   255.4-1ubuntu8.6                        deb                         
-systemd-sysv                                                                  255.4-1ubuntu8.6                        deb                         
+systemd                                                                       255.4-1ubuntu8.8                        deb                         
+systemd-dev                                                                   255.4-1ubuntu8.8                        deb                         
+systemd-sysv                                                                  255.4-1ubuntu8.8                        deb                         
 sysvinit-utils                                                                3.08-6ubuntu3                           deb                         
 tags.cncf.io/container-device-interface                                       v0.8.1                                  go-module                   
 tags.cncf.io/container-device-interface                                       v1.0.1                                  go-module  (+1 duplicate)   
@@ -1249,9 +1249,9 @@ tzdata                                                                        20
 ubuntu-keyring                                                                2023.11.28.1                            deb                         
 ubuntu-mono                                                                   24.04-0ubuntu1                          deb                         
 ucf                                                                           3.0043+nmu1                             deb                         
-udev                                                                          255.4-1ubuntu8.6                        deb                         
+udev                                                                          255.4-1ubuntu8.8                        deb                         
 undici                                                                        5.26.3                                  npm                         
-undici-types                                                                  6.21.0                                  npm                         
+undici-types                                                                  7.8.0                                   npm                         
 unminimize                                                                    0.2.1                                   deb                         
 unpipe                                                                        1.0.0                                   npm                         
 util-linux                                                                    2.39.3-9ubuntu6.2                       deb                         
