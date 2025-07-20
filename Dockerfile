@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
+FROM ghcr.io/linuxserver/baseimage-selkies:ubuntunoble
 
 # set version label
 ARG BUILD_DATE
@@ -15,7 +15,7 @@ ENV TITLE=MySQL-Workbench
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-    /kclient/public/icon.png \
+    /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mysql-workbench-logo.png && \
   echo "**** install packages ****" && \
   apt-get update && \
