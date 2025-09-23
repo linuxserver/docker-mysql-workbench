@@ -78,6 +78,8 @@ By default, this container has no authentication. The optional `CUSTOM_USER` and
 
 The web interface includes a terminal with passwordless `sudo` access. Any user with access to the GUI can gain root control within the container, install arbitrary software, and probe your local network.
 
+While not generally recommended, certain legacy environments specifically those with older hardware or outdated Linux distributions may require the deactivation of the standard seccomp profile to get containerized desktop software to run. This can be achieved by utilizing the `--security-opt seccomp=unconfined` parameter. It is critical to use this option only when absolutely necessary as it disables a key security layer of Docker, elevating the potential for container escape vulnerabilities.
+
 ### Options in all Selkies-based GUI containers
 
 This container is based on [Docker Baseimage Selkies](https://github.com/linuxserver/docker-baseimage-selkies), which provides the following environment variables and run configurations to customize its functionality.
@@ -231,6 +233,7 @@ services:
     ports:
       - 3000:3000
       - 3001:3001
+    shm_size: "1gb"
     restart: unless-stopped
 ```
 
@@ -246,6 +249,7 @@ docker run -d \
   -p 3000:3000 \
   -p 3001:3001 \
   -v /path/to/config:/config \
+  --shm-size="1gb" \
   --restart unless-stopped \
   lscr.io/linuxserver/mysql-workbench:latest
 ```
@@ -262,6 +266,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
 | `-v /config` | Users home directory in the container, stores program settings. |
+| `--shm-size=` | Recommended for all desktop images. |
 | `--cap-add=IPC_LOCK` | Required for keyring functionality. |
 
 ### Portainer notice

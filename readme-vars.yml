@@ -23,6 +23,8 @@ param_ports:
 cap_add_param: true
 cap_add_param_vars:
   - {cap_add_var: "IPC_LOCK", desc: "Required for keyring functionality."}
+custom_params:
+  - {name: "shm-size", name_compose: "shm_size", value: "1gb", desc: "Recommended for all desktop images."}
 # Selkies blurb settings
 selkies_blurb: true
 show_nvidia: true
