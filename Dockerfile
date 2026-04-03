@@ -12,7 +12,9 @@ LABEL maintainer="thelamer"
 ARG DEBIAN_FRONTEND="noninteractive"
 
 # title
-ENV TITLE=MySQL-Workbench
+ENV TITLE=MySQL-Workbench \
+    NO_GAMEPAD=true \
+    PIXELFLUX_WAYLAND=true
 
 RUN \
   echo "**** add icon ****" && \
