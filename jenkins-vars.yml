@@ -3,7 +3,7 @@
 # jenkins variables
 project_name: docker-mysql-workbench
 external_type: na
-custom_version_command: "curl -sL https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.db | tar tzf - | awk -F '(-|/)' '/intellij-idea-community-edition/ {print $5; exit}'"
+custom_version_command: "curl -sL https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.db | tar tzf - | awk -F '(-|/)' '/mysql-workbench/ {print $3; exit}'"
 release_type: stable
 release_tag: latest
 ls_branch: master

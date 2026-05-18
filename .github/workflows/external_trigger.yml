@@ -29,7 +29,7 @@ jobs:
           echo "> [!NOTE]" >> $GITHUB_STEP_SUMMARY
           echo "> External trigger running off of master branch. To disable this trigger, add \`mysql-workbench_master\` into the Github organizational variable \`SKIP_EXTERNAL_TRIGGER\`." >> $GITHUB_STEP_SUMMARY
           printf "\n## Retrieving external version\n\n" >> $GITHUB_STEP_SUMMARY
-          EXT_RELEASE=$(curl -sL https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.db | tar tzf - | awk -F '(-|/)' '/intellij-idea-community-edition/ {print $5; exit}')
+          EXT_RELEASE=$(curl -sL https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.db | tar tzf - | awk -F '(-|/)' '/mysql-workbench/ {print $3; exit}')
           echo "Type is \`custom_version_command\`" >> $GITHUB_STEP_SUMMARY
           if grep -q "^mysql-workbench_master_${EXT_RELEASE}" <<< "${SKIP_EXTERNAL_TRIGGER}"; then
             echo "> [!WARNING]" >> $GITHUB_STEP_SUMMARY
