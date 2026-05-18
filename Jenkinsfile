@@ -26,7 +26,7 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/mysql-workbench'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/mysql-workbench'
     PR_DOCKERHUB_IMAGE = 'lspipepr/mysql-workbench'
-    DIST_IMAGE = 'ubuntu'
+    DIST_IMAGE = 'arch'
     MULTIARCH = 'false'
     CI = 'true'
     CI_WEB = 'true'
@@ -149,7 +149,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sL https://dev.mysql.com/downloads/workbench/ |awk '/<h1>MySQL Workbench/ {print $3;exit}' ''',
+            script: ''' curl -sL https://mirror.rackspace.com/archlinux/extra/os/x86_64/extra.db | tar tzf - | awk -F '(-|/)' '/intellij-idea-community-edition/ {print $5; exit}' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }
