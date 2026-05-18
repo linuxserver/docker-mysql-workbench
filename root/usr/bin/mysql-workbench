@@ -1,0 +1,3 @@
+#! /bin/bash
+
+dbus-run-session /usr/sbin/mysql-workbench-real
